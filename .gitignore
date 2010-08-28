@@ -1,0 +1,10 @@
+.*.swp
+*.suo
+bin
+_ReSharper.*
+obj
+*.gpState
+*.user
+*.vssscc
+*.vspscc
+TestResults
