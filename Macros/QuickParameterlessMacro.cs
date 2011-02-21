@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Hotspots;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Macros;
 
@@ -26,7 +27,12 @@ namespace JoarOyen.Tools.ReSharper.Macros
         public string EvaluateQuickResult(IHotspotContext context, IList<string> arguments)
         {
             var currentHotspot = new CurrentHotspot(context.HotspotSession);
-            return QuickEvaluate(currentHotspot.Value);
+            if (currentHotspot.ValueShouldBeHandledBy(this))
+            {
+                return QuickEvaluate(currentHotspot.Value);
+            }
+
+            return null;
         }
 
         public bool HandleExpansion(IHotspotContext context, IList<string> arguments)
@@ -35,7 +41,7 @@ namespace JoarOyen.Tools.ReSharper.Macros
             return false;
         }
 
-        private static void HotspotSessionHotspotUpdated(object sender, System.EventArgs e)
+        private static void HotspotSessionHotspotUpdated(object sender, EventArgs e)
         {
             var currentHotspot = new CurrentHotspot((HotspotSession)sender);
             currentHotspot.InvokeEvaluateQuickResult();

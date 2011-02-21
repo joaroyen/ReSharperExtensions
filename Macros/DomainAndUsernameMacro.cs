@@ -5,12 +5,12 @@ namespace JoarOyen.Tools.ReSharper.Macros
 {
     [Macro("JoarOyenLiveTemplateMacros.DomainAndUsername",
       ShortDescription = "Current username with domain",
-      LongDescription = "Current username with domain on the format <Domain>\\\\<Username>")]
+      LongDescription = "Current username with domain on the format <Domain>\\<Username>")]
     public class DomainAndUsernameMacro : QuickParameterlessMacro
     {
         public override string QuickEvaluate(string value)
         {
-            return Thread.CurrentPrincipal.Identity.Name.Replace("\\", "\\\\");
+            return Thread.CurrentPrincipal.Identity.Name;
         }
     }
 }

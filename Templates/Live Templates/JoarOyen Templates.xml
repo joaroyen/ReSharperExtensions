@@ -7,8 +7,8 @@
       <Category name="MSTest" />
     </Categories>
     <Variables>
-      <Variable name="TestCategory" expression="list(&quot;,Unit,Integration&quot;)" initialRange="0" />
       <Variable name="DomainAndUsername" expression="JoarOyenLiveTemplateMacros.DomainAndUsername()" initialRange="-1" />
+      <Variable name="TestCategory" expression="list(&quot;,Unit,Integration,AcceptanceInProgress,AcceptanceCompleted&quot;)" initialRange="0" />
       <Variable name="Test_method_name" expression="JoarOyenLiveTemplateMacros.ValidIdentifier()" initialRange="0" />
     </Variables>
     <CustomProperties />
