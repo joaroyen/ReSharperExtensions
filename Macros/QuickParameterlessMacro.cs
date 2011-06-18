@@ -1,7 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Hotspots;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Macros;
+using JetBrains.Util;
 
 namespace JoarOyen.Tools.ReSharper.Macros
 {
@@ -11,7 +11,7 @@ namespace JoarOyen.Tools.ReSharper.Macros
 
         public ParameterInfo[] Parameters
         {
-            get { return new ParameterInfo[] { }; }
+            get { return EmptyArray<ParameterInfo>.Instance; }
         }
 
         public HotspotItems GetLookupItems(IHotspotContext context, IList<string> arguments)
@@ -26,10 +26,12 @@ namespace JoarOyen.Tools.ReSharper.Macros
 
         public string EvaluateQuickResult(IHotspotContext context, IList<string> arguments)
         {
-            var currentHotspot = new CurrentHotspot(context.HotspotSession);
-            if (currentHotspot.ValueShouldBeHandledBy(this))
+            foreach (var hotspot in context.HotspotSession.Hotspots)
             {
-                return QuickEvaluate(currentHotspot.Value);
+                if (ShouldHandle(hotspot))
+                {
+                    return QuickEvaluate(HotspotValue(hotspot));
+                }
             }
 
             return null;
@@ -37,14 +39,40 @@ namespace JoarOyen.Tools.ReSharper.Macros
 
         public bool HandleExpansion(IHotspotContext context, IList<string> arguments)
         {
-            context.HotspotSession.HotspotUpdated += HotspotSessionHotspotUpdated;
+            context.HotspotSession.Closed += HotspotSessionClosed;
+
             return false;
         }
 
-        private static void HotspotSessionHotspotUpdated(object sender, EventArgs e)
+        private void HotspotSessionClosed(IHotspotSession hotspotSession, TerminationType arg2)
         {
-            var currentHotspot = new CurrentHotspot((HotspotSession)sender);
-            currentHotspot.InvokeEvaluateQuickResult();
+            foreach (var hotspot in hotspotSession.Hotspots)
+            {
+                if (ShouldHandle(hotspot))
+                {
+                    hotspot.QuickEvaluate();
+                }
+            }
+        }
+
+        private bool ShouldHandle(Hotspot hotspot)
+        {
+            if (hotspot == null) return false;
+
+            var macroCallExpression = hotspot.Expression as MacroCallExpression;
+
+            return macroCallExpression != null &&
+                   GetType().IsInstanceOfType(macroCallExpression.Macro);
+        }
+
+        private string HotspotValue(Hotspot hotspot)
+        {
+            if (string.IsNullOrEmpty(hotspot.CurrentValue))
+            {
+                return hotspot.Name;
+            }
+
+            return hotspot.CurrentValue;
         }
     }
 }

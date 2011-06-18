@@ -7,10 +7,10 @@ namespace JoarOyen.Tools.ReSharper.Macros
 {
     public class CurrentHotspot
     {
-        private readonly HotspotSession _hotspotSession;
+        private readonly IHotspotSession _hotspotSession;
         private ITextControlPos _caretPosition;
 
-        public CurrentHotspot(HotspotSession hotspotSession)
+        public CurrentHotspot(IHotspotSession hotspotSession)
         {
             _hotspotSession = hotspotSession;
         }
