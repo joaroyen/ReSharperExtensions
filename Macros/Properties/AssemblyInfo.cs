@@ -6,11 +6,11 @@ using JetBrains.Application.PluginSupport;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("JoarOyen.Tools.ReSharper.Macros")]
-[assembly: AssemblyDescription("Macros for JetBrains ReSharper. Tested with ReSharper 5.1 and Visual Studio 2010.")]
+[assembly: AssemblyDescription("Macros for JetBrains ReSharper. Tested with ReSharper 6.0 and Visual Studio 2010.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Joar Øyen")]
 [assembly: AssemblyProduct("ReSharper Macros")]
-[assembly: AssemblyCopyright("Copyright © Joar Øyen 2010")]
+[assembly: AssemblyCopyright("Copyright © Joar Øyen 2011")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

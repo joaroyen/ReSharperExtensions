@@ -39,13 +39,15 @@ namespace JoarOyen.Tools.ReSharper.Macros
 
         public bool HandleExpansion(IHotspotContext context, IList<string> arguments)
         {
-            context.HotspotSession.Closed += HotspotSessionClosed;
+            context.HotspotSession.HotspotUpdated += HotspotSessionHotspotUpdated;
 
             return false;
         }
 
-        private void HotspotSessionClosed(IHotspotSession hotspotSession, TerminationType arg2)
+        private void HotspotSessionHotspotUpdated(object sender, System.EventArgs e)
         {
+            var hotspotSession = (HotspotSession)sender;
+
             foreach (var hotspot in hotspotSession.Hotspots)
             {
                 if (ShouldHandle(hotspot))
@@ -67,12 +69,7 @@ namespace JoarOyen.Tools.ReSharper.Macros
 
         private string HotspotValue(Hotspot hotspot)
         {
-            if (string.IsNullOrEmpty(hotspot.CurrentValue))
-            {
-                return hotspot.Name;
-            }
-
-            return hotspot.CurrentValue;
+            return string.IsNullOrEmpty(hotspot.CurrentValue) ? hotspot.Name : hotspot.CurrentValue;
         }
     }
 }
