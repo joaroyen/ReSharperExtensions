@@ -6,7 +6,7 @@ using JetBrains.Application.PluginSupport;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("JoarOyen.Tools.ReSharper.Macros")]
-[assembly: AssemblyDescription("Macros for JetBrains ReSharper. Tested with ReSharper 6.0 and Visual Studio 2010.")]
+[assembly: AssemblyDescription("Macros for JetBrains ReSharper. Tested with ReSharper 6.1 and Visual Studio 2010.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Joar Øyen")]
 [assembly: AssemblyProduct("ReSharper Macros")]
@@ -15,7 +15,7 @@ using JetBrains.Application.PluginSupport;
 [assembly: AssemblyCulture("")]
 
 [assembly: PluginTitle("JoarOyen.Tools.ReSharper.Macros")]
-[assembly: PluginDescription("Macros for JetBrains ReSharper: Domain and username, regular expression replacement and valid identifier. Tested with ReSharper 5.1 and Visual Studio 2010.")]
+[assembly: PluginDescription("Macros for JetBrains ReSharper: Domain and username, regular expression replacement and valid identifier. Tested with ReSharper 6.1 and Visual Studio 2010.")]
 [assembly: PluginVendor("Joar Øyen")]
 
 

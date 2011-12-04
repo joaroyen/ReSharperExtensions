@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using JetBrains.DocumentModel;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Hotspots;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Macros;
 using JetBrains.Util;
@@ -19,7 +20,7 @@ namespace JoarOyen.Tools.ReSharper.Macros
             return null;
         }
 
-        public string GetPlaceholder()
+        public string GetPlaceholder(IDocument document)
         {
             return "a";
         }

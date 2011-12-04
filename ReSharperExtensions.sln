@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deployment", "Deployment", "{47355A91-A1D2-4305-AC99-6090D523DFC5}"
 	ProjectSection(SolutionItems) = preProject
-		Macros.bat = Macros.bat
+		Deploy.bat = Deploy.bat
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Macros.Tests.Unit", "Test\Macros.Tests.Unit\Macros.Tests.Unit.csproj", "{614FD39A-6B4A-4A55-91E8-85C2E1D63260}"
