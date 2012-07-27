@@ -1,7 +1,7 @@
 using System.Text;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Macros;
 
-namespace JoarOyen.Tools.ReSharper.Macros
+namespace JoarOyen.ReSharperPlugIn
 {
     [Macro("JoarOyenLiveTemplateMacros.ValidIdentifier",
       ShortDescription = "Ensures that given variable is a valid C# identifier",

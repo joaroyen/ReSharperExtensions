@@ -4,7 +4,7 @@ using JetBrains.ReSharper.Feature.Services.LiveTemplates.Hotspots;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Macros;
 using JetBrains.Util;
 
-namespace JoarOyen.Tools.ReSharper.Macros
+namespace JoarOyen.ReSharperPlugIn
 {
     public abstract class QuickParameterlessMacro : IMacro
     {
@@ -45,9 +45,9 @@ namespace JoarOyen.Tools.ReSharper.Macros
             return false;
         }
 
-        private void HotspotSessionHotspotUpdated(object sender, System.EventArgs e)
+        public void HotspotSessionHotspotUpdated(object sender, System.EventArgs e)
         {
-            var hotspotSession = (HotspotSession)sender;
+            var hotspotSession = (IHotspotSession)sender;
 
             foreach (var hotspot in hotspotSession.Hotspots)
             {
