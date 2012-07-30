@@ -23,8 +23,7 @@ public class TestEnvironmentAssembly : ReSharperTestEnvironmentAssembly
     // Test assembly
     yield return Assembly.GetExecutingAssembly();
 
-    #warning you need to replace 'object' below with a type from the assembly being tested
-    yield return typeof(object).Assembly;
+    yield return typeof(JoarOyen.ReSharperPlugIn.QuickParameterlessMacro).Assembly;
   }
 
   public override void SetUp()
