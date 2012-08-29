@@ -1,4 +1,3 @@
-using System.Text;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Macros;
 
 namespace JoarOyen.ReSharperPlugIn
@@ -10,38 +9,9 @@ namespace JoarOyen.ReSharperPlugIn
     {
         public override string QuickEvaluate(string value)
         {
-            return TransformToValidIdentifier(value);
-        }
-
-        private static string TransformToValidIdentifier(string value)
-        {
-            if (string.IsNullOrEmpty(value)) return value;
-
-            var validIdentifier = new StringBuilder(value);
-
-            PrefixWithUnderscoreIfNotStartingWithACharacter(validIdentifier);
-            ReplaceInvalidCharactersWithUnderscore(validIdentifier);
-
-            return validIdentifier.ToString();
-        }
-
-        private static void PrefixWithUnderscoreIfNotStartingWithACharacter(StringBuilder validIdentifier)
-        {
-            if (!char.IsLetter(validIdentifier[0]) && validIdentifier[0] != '_')
-            {
-                validIdentifier.Insert(0, '_');
-            }
-        }
-
-        private static void ReplaceInvalidCharactersWithUnderscore(StringBuilder validIdentifier)
-        {
-            for (int i = 0; i < validIdentifier.Length; i++)
-            {
-                if (!char.IsLetterOrDigit(validIdentifier[i]))
-                {
-                    validIdentifier[i] = '_';
-                }
-            }
+            var _identifierBuilder = new IdentifierBuilder(value);
+            _identifierBuilder.TransformToValidIdentifier();
+            return _identifierBuilder.ToString();
         }
     }
 }
