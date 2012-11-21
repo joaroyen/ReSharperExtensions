@@ -7,6 +7,8 @@ namespace JoarOyen.ReSharperPlugIn.Tests
     {
         private readonly CapitalizedWordsIdentifierMacro _capitalizedWordsIdentifierMacro = new CapitalizedWordsIdentifierMacro();
 
+        
+
         [TestCase(Category = "Unit")]
         public void Empty_identifier_returns_empty()
         {

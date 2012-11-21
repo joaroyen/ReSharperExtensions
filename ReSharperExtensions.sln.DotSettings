@@ -16,6 +16,7 @@
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Field/=Test_005Fmethod_005Fname/Order/@EntryValue">2</s:Int64>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Field/=TestCategory/@KeyIndexDefined">True</s:Boolean>
 	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Field/=TestCategory/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/IsDisabled/@EntryValue">True</s:Boolean>
 	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Reformat/@EntryValue">True</s:Boolean>
 	
 	

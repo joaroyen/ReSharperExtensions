@@ -1,3 +1,6 @@
+packages/
+ReSharper*Extensions*
+
 #OS junk files
 [Tt]humbs.db
 Desktop.ini
@@ -64,7 +67,3 @@ _ReSharper*/
 
 # Office Temp Files
 ~$*
-
-#NuGet
-packages/
-ReSharper70Extensions*

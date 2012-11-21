@@ -1,4 +1,4 @@
-$sourcePath = "ReSharper70Extensions"
+$sourcePath = "ReSharper71Extensions"
 $destinationPackage = $sourcePath + "_" + (get-date -Format "yyyy-MM-dd") + ".zip" 
 
 msbuild .\ReSharperExtensions.sln /p:Configuration=Release
