@@ -3,6 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00465A82-90E8-4B47-8022-F159490A9C40}"
 	ProjectSection(SolutionItems) = preProject
+		BuildPackage.ps1 = BuildPackage.ps1
 		Deploy.bat = Deploy.bat
 		README.md = README.md
 		ReSharperExtensions.sln.DotSettings = ReSharperExtensions.sln.DotSettings
@@ -15,8 +16,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EBC0E906-0655-41F9-B029-9AAE922081B5}"
 	ProjectSection(SolutionItems) = preProject
 		.nuget\NuGet.Config = .nuget\NuGet.Config
-		.nuget\NuGet.targets = .nuget\NuGet.targets
 		.nuget\nuget.exe = .nuget\nuget.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
 Global
