@@ -18,9 +18,9 @@ Alternative 1 is recommended if you want to tinker with and debug the macros you
 
 ### Alternative 2: From precompiled package with Release build ###
 
-* Download the latest package from the download section on [GitHub](https://github.com/joaroyen/ReSharperExtensions/downloads).
+* Download the latest package for your ReSharper version from my [SkyDrive folder](http://sdrv.ms/XBPFYA).
 * Unzip the package to an empty directory.
-* Copy JoarOyen.ReSharperPlugIn.dll to the ReSharper 7.1 plugins folder. This will typically be something like "c:\Users\<USER>\AppData\Local\JetBrains\ReSharper\v7.1\Plugins\JoarOyen\".
+* Copy JoarOyen.ReSharperPlugIn.dll to the ReSharper 7.1 plugins folder. This will typically be something like "C:\Users\&lt;USERNAME&gt;\AppData\Local\JetBrains\ReSharper\v7.1\Plugins\JoarOyen\".
 * Open the "ReSharperExtensions.sln.DotSettings" file using "ReSharper -> Manage Options..." to inspect the example template
 
 Comments
