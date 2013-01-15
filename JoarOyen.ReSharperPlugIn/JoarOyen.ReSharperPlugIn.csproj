@@ -43,13 +43,9 @@
     <Compile Include="CapitalizedWordsIdentifierMacro.cs" />
     <Compile Include="DomainAndUsernameMacro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AboutAction.cs" />
     <Compile Include="QuickParameterlessMacro.cs" />
     <Compile Include="ValidIdentifierMacro.cs" />
     <Compile Include="IdentifierBuilder.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Actions.xml" />
   </ItemGroup>
   <PropertyGroup>
     <ReSharperSdkTargets Condition=" '$(ReSharperSdkTargets)' == '' ">$(MSBuildExtensionsPath)\JetBrains\ReSharper.SDK\v7.1</ReSharperSdkTargets>
