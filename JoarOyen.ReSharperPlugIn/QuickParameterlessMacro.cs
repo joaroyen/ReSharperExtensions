@@ -1,44 +1,26 @@
-﻿using System.Collections.Generic;
-using JetBrains.DocumentModel;
+﻿using System.Diagnostics;
+using System.Linq;
+using System.Reflection;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Hotspots;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Macros;
-using JetBrains.Util;
 
 namespace JoarOyen.ReSharperPlugIn
 {
-    public abstract class QuickParameterlessMacro : IMacro
+    public abstract class QuickParameterlessMacro : SimpleMacroImplementation
     {
         public abstract string QuickEvaluate(string value);
 
-        public ParameterInfo[] Parameters
+        public override string EvaluateQuickResult(IHotspotContext context)
         {
-            get { return EmptyArray<ParameterInfo>.Instance; }
+            var q = 
+                from hotspot in context.HotspotSession.Hotspots
+                where ShouldHandle(hotspot)
+                select QuickEvaluate(HotspotValue(hotspot));
+            
+            return q.FirstOrDefault();
         }
 
-        public HotspotItems GetLookupItems(IHotspotContext context, IList<string> arguments)
-        {
-            return null;
-        }
-
-        public string GetPlaceholder(IDocument document)
-        {
-            return "a";
-        }
-
-        public string EvaluateQuickResult(IHotspotContext context, IList<string> arguments)
-        {
-            foreach (var hotspot in context.HotspotSession.Hotspots)
-            {
-                if (ShouldHandle(hotspot))
-                {
-                    return QuickEvaluate(HotspotValue(hotspot));
-                }
-            }
-
-            return null;
-        }
-
-        public bool HandleExpansion(IHotspotContext context, IList<string> arguments)
+        public override bool HandleExpansion(IHotspotContext context)
         {
             context.HotspotSession.HotspotUpdated += HotspotSessionHotspotUpdated;
 
@@ -62,10 +44,25 @@ namespace JoarOyen.ReSharperPlugIn
         {
             if (hotspot == null) return false;
 
-            var macroCallExpression = hotspot.Expression as MacroCallExpression;
+            var macroImplementationType = TryAndGetMacroImplementationFromPrivateFields(hotspot);
 
-            return macroCallExpression != null &&
-                   GetType().IsInstanceOfType(macroCallExpression.Macro);
+            return macroImplementationType != null && GetType().IsInstanceOfType(macroImplementationType);
+        }
+
+        private static object TryAndGetMacroImplementationFromPrivateFields(Hotspot hotspot)
+        {
+            var expressionField = hotspot.GetType().GetField("myExpression", BindingFlags.NonPublic | BindingFlags.Instance);
+            Debug.Assert(expressionField != null);
+            var expression = expressionField.GetValue(hotspot);
+            if (expression == null)
+            {
+                return null;
+            }
+
+            var macroImplementationField = expression.GetType().GetField("myImplementation", BindingFlags.NonPublic | BindingFlags.Instance);
+            Debug.Assert(macroImplementationField != null);
+            
+            return macroImplementationField.GetValue(expression);
         }
 
         private string HotspotValue(Hotspot hotspot)

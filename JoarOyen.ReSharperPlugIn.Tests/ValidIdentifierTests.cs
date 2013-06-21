@@ -5,7 +5,7 @@ namespace JoarOyen.ReSharperPlugIn.Tests
     [TestFixture]
     public class ValidIdentifierTests
     {
-        readonly ValidIdentifierMacro _validIdentifierMacro = new ValidIdentifierMacro();
+        private readonly ValidIdentifierMacroImpl _validIdentifierMacro = new ValidIdentifierMacroImpl();
 
         [TestCase(Category = "Unit")]
         public void Empty_identifier_returns_empty()

@@ -5,7 +5,7 @@ namespace JoarOyen.ReSharperPlugIn.Tests
     [TestFixture]
     public class DomainAndUsernameMacroTests
     {
-        private readonly DomainAndUsernameMacro _domainAndUsernameMacro = new DomainAndUsernameMacro();
+        private readonly DomainAndUsernameMacroImpl _domainAndUsernameMacro = new DomainAndUsernameMacroImpl();
 
         [TestCase(Category = "Unit")]
         public void Getting_the_current_domain_and_username_returns_domain_and_user_name_with_one_escaped_backslash_when_not_at_hotspot()

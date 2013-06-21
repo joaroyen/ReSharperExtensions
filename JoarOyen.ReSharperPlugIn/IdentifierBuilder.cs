@@ -4,7 +4,7 @@ namespace JoarOyen.ReSharperPlugIn
 {
     public class IdentifierBuilder
     {
-        private StringBuilder _identifier;
+        private readonly StringBuilder _identifier;
 
         public IdentifierBuilder(string value)
         {

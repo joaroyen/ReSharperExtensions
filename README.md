@@ -14,19 +14,19 @@ Alternative 1 is recommended if you want to tinker with and debug the macros you
 * Download and install [ReSharper SDK](http://www.jetbrains.com/resharper/download/index.html)
 * Open Visual Studio 2012 and build the solution in Debug configuration
 * Close all instances of Visual Studio
-* Run "Deploy.bat" from an elevated command prompt to copy dll and pdb to the ReSharper 7.1 plugins folder for the current user
+* Run "Deploy.bat" from an elevated command prompt to copy dll and pdb to the ReSharper 8.0 plugins folder for the current user
 
 ### Alternative 2: From precompiled package with Release build ###
 
 * Download the latest package for your ReSharper version from my [SkyDrive folder](http://sdrv.ms/XBPFYA).
 * Unzip the package to an empty directory.
-* Copy JoarOyen.ReSharperPlugIn.dll to the ReSharper 7.1 plugins folder. This will typically be something like "C:\Users\&lt;USERNAME&gt;\AppData\Local\JetBrains\ReSharper\v7.1\Plugins\JoarOyen\".
+* Copy JoarOyen.ReSharperPlugIn.dll to the ReSharper 8.0 plugins folder. This will typically be something like "C:\Users\&lt;USERNAME&gt;\AppData\Local\JetBrains\ReSharper\v8.0\Plugins\JoarOyen\".
 * Open the "ReSharperExtensions.sln.DotSettings" file using "ReSharper -> Manage Options..." to inspect the example template
 
 Comments
 --------
 
-* Master is updated to support ReSharper 7.1, and requires .NET 4.0 or newer. The macros can therefore only be used in VS2010 and VS2012.
+* Master is updated to support ReSharper 8.0, and requires .NET 4.0 or newer. The macros can therefore only be used in VS2010 and VS2012.
 * Macros that works with previous versions of ReSharper and Visual Studio are available in separate branches for each version of ReSharper.
 * The code in this version is built with the ReSharper SDK, and the namespace for the macros has been changed to reflect the new name of the assembly.
 * The test project is using NUnit from ReSharper SDK, but uses NuGet for NSubstitute (this dependency should be downloaded automatically).

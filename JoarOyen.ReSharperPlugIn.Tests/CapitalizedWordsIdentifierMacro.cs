@@ -5,10 +5,8 @@ namespace JoarOyen.ReSharperPlugIn.Tests
     [TestFixture]
     public class CapitalizedWordsIdentifierMacroTests
     {
-        private readonly CapitalizedWordsIdentifierMacro _capitalizedWordsIdentifierMacro = new CapitalizedWordsIdentifierMacro();
-
+        private readonly CapitalizedWordsIdentifierMacroImpl _capitalizedWordsIdentifierMacro = new CapitalizedWordsIdentifierMacroImpl();
         
-
         [TestCase(Category = "Unit")]
         public void Empty_identifier_returns_empty()
         {
