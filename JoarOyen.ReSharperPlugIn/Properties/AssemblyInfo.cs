@@ -2,9 +2,6 @@ using System.Reflection;
 using JetBrains.ActionManagement;
 using JetBrains.Application.PluginSupport;
 
-// General Information about an assembly is controlled through the following 
-// set of attributes. Change these attribute values to modify the information
-// associated with an assembly.
 [assembly: AssemblyTitle("JoarOyen.ReSharperPlugIn")]
 [assembly: AssemblyDescription("Contains Live Templates and macros for writing test methods")]
 [assembly: AssemblyConfiguration("")]
