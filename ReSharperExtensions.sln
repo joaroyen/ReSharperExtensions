@@ -3,8 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00465A82-90E8-4B47-8022-F159490A9C40}"
 	ProjectSection(SolutionItems) = preProject
-		BuildPackage.ps1 = BuildPackage.ps1
+		BuildPackages.ps1 = BuildPackages.ps1
 		Deploy.bat = Deploy.bat
+		JoarOyen.ReSharperExtensions.LiveTemplates.DotSettings = JoarOyen.ReSharperExtensions.LiveTemplates.DotSettings
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -17,6 +18,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EBC0E9
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 		.nuget\nuget.exe = .nuget\nuget.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{C8DD8158-6BB4-4471-A720-AE800D08A6E6}"
+	ProjectSection(SolutionItems) = preProject
+		Deploy\JoarOyen.ReSharperExtensions.LiveTemplates.8.0.0.0.nuspec = Deploy\JoarOyen.ReSharperExtensions.LiveTemplates.8.0.0.0.nuspec
+		Deploy\JoarOyen.ReSharperExtensions.Macros.8.0.0.0.nuspec = Deploy\JoarOyen.ReSharperExtensions.Macros.8.0.0.0.nuspec
 	EndProjectSection
 EndProject
 Global

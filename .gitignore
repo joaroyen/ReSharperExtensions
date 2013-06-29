@@ -1,5 +1,6 @@
 packages/
 ReSharper*Extensions*
+Deploy/*.nupkg
 
 #OS junk files
 [Tt]humbs.db

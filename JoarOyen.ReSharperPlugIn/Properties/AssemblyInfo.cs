@@ -10,12 +10,12 @@ using JetBrains.Application.PluginSupport;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Joar Øyen")]
 [assembly: AssemblyProduct("JoarOyen.ReSharperPlugIn")]
-[assembly: AssemblyCopyright("Copyright © Joar Øyen, 2012")]
+[assembly: AssemblyCopyright("Copyright © 2013 Joar Øyen")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-[assembly: AssemblyVersion("1.0.0.0")]
-[assembly: AssemblyFileVersion("1.0.0.0")]
+[assembly: AssemblyVersion("8.0.0.0")]
+[assembly: AssemblyFileVersion("8.0.0.0")]
 
 [assembly: ActionsXml("JoarOyen.ReSharperPlugIn.Actions.xml")]
 

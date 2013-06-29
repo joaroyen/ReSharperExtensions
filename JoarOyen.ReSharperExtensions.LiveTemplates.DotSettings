@@ -1,0 +1,25 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Description/@EntryValue">test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Field/=DomainAndUsername/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Field/=DomainAndUsername/Expression/@EntryValue">JoarOyenLiveTemplateMacros.DomainAndUsername()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Field/=DomainAndUsername/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Field/=Test_005Fmethod_005Fname/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Field/=Test_005Fmethod_005Fname/Expression/@EntryValue">JoarOyenLiveTemplateMacros.ValidIdentifier()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Field/=Test_005Fmethod_005Fname/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Field/=TestCategory/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Field/=TestCategory/Expression/@EntryValue">list("Unit,Integration,Acceptance")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Field/=TestCategory/Order/@EntryValue">0</s:Int64>
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">4.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Shortcut/@EntryValue">mstm</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B7ADA03151419D4EB2F142E78E6692C4/Text/@EntryValue">[TestMethod, TestCategory("$TestCategory$"), Owner("$DomainAndUsername$")]
+public void $Test_method_name$()
+{
+	$END$
+}</s:String></wpf:ResourceDictionary>
