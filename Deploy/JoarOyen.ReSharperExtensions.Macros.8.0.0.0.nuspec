@@ -7,12 +7,15 @@
     <authors>Joar Øyen</authors>
     <projectUrl>https://github.com/joaroyen/ReSharperExtensions</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Contains Live Templates Macros for writing test methods</description>
+    <description>Live Templates Macros for writing test methods</description>
     <summary />
     <releaseNotes>Support for ReSharper 8.0</releaseNotes>
     <copyright>Copyright © 2013 Joar Øyen</copyright>
     <language>en-US</language>
     <tags>Macro, Testing</tags>
+    <dependencies>
+      <dependency id="ReSharper" version="8.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="..\JoarOyen.ReSharperPlugIn\bin\Release\JoarOyen.ReSharperPlugIn.*" target="ReSharper\v8.0\plugins\" />

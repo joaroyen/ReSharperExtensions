@@ -14,7 +14,8 @@
     <language>en-US</language>
     <tags>Macro, Testing</tags>
     <dependencies>
-      <dependency id="JoarOyen.ReSharperExtensions.Macros" version="8.0.0.0" />
+      <dependency id="ReSharper" version="8.0" />
+      <dependency id="JoarOyen.ReSharperExtensions.Macros" version="8.0" />
     </dependencies>
   </metadata>
   <files>

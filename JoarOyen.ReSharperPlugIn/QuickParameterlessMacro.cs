@@ -1,6 +1,5 @@
-﻿using System.Diagnostics;
+﻿using System;
 using System.Linq;
-using System.Reflection;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Hotspots;
 using JetBrains.ReSharper.Feature.Services.LiveTemplates.Macros;
 
@@ -27,7 +26,7 @@ namespace JoarOyen.ReSharperPlugIn
             return false;
         }
 
-        public void HotspotSessionHotspotUpdated(object sender, System.EventArgs e)
+        public void HotspotSessionHotspotUpdated(object sender, EventArgs e)
         {
             var hotspotSession = (IHotspotSession)sender;
 
@@ -44,25 +43,18 @@ namespace JoarOyen.ReSharperPlugIn
         {
             if (hotspot == null) return false;
 
-            var macroImplementationType = TryAndGetMacroImplementationFromPrivateFields(hotspot);
+            var macroCallExpressionNew = hotspot.Expression as MacroCallExpressionNew;
+            if (macroCallExpressionNew == null) return false;
 
-            return macroImplementationType != null && GetType().IsInstanceOfType(macroImplementationType);
+            return ThisImplementationsMacroDefinition().IsInstanceOfType(macroCallExpressionNew.Definition);
         }
 
-        private static object TryAndGetMacroImplementationFromPrivateFields(Hotspot hotspot)
+        private Type ThisImplementationsMacroDefinition()
         {
-            var expressionField = hotspot.GetType().GetField("myExpression", BindingFlags.NonPublic | BindingFlags.Instance);
-            Debug.Assert(expressionField != null);
-            var expression = expressionField.GetValue(hotspot);
-            if (expression == null)
-            {
-                return null;
-            }
+            var macroDefinitionTypeOfCurrentImplementation = (MacroImplementationAttribute)GetType().GetCustomAttributes(
+                typeof (MacroImplementationAttribute), true).First();
 
-            var macroImplementationField = expression.GetType().GetField("myImplementation", BindingFlags.NonPublic | BindingFlags.Instance);
-            Debug.Assert(macroImplementationField != null);
-            
-            return macroImplementationField.GetValue(expression);
+            return macroDefinitionTypeOfCurrentImplementation.Definition;
         }
 
         private string HotspotValue(Hotspot hotspot)

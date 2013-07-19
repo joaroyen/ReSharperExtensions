@@ -3,7 +3,7 @@ using JetBrains.ActionManagement;
 using JetBrains.Application.PluginSupport;
 
 [assembly: AssemblyTitle("JoarOyen.ReSharperPlugIn")]
-[assembly: AssemblyDescription("Contains Live Templates and macros for writing test methods")]
+[assembly: AssemblyDescription("Live Templates and macros for writing test methods")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Joar Øyen")]
 [assembly: AssemblyProduct("JoarOyen.ReSharperPlugIn")]
@@ -18,5 +18,5 @@ using JetBrains.Application.PluginSupport;
 
 // The following information is displayed by ReSharper in the Plugins dialog
 [assembly: PluginTitle("Joar Øyen's extensions for ReSharper")]
-[assembly: PluginDescription("Contains Live Templates and macros for writing test methods")]
+[assembly: PluginDescription("Live Templates and macros for writing test methods")]
 [assembly: PluginVendor("Joar Øyen")]
