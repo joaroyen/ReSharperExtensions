@@ -6,6 +6,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		BuildPackages.ps1 = BuildPackages.ps1
 		Deploy.bat = Deploy.bat
 		JoarOyen.ReSharperExtensions.LiveTemplates.DotSettings = JoarOyen.ReSharperExtensions.LiveTemplates.DotSettings
+		LICENSE.txt = LICENSE.txt
 		README.md = README.md
 	EndProjectSection
 EndProject
