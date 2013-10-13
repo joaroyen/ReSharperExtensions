@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
-    <id>JoarOyen.ReSharperExtensions.LiveTemplates</id>
-    <version>8.0.0.0</version>
-    <title>Joar Øyen's Live Templates for ReSharper</title>
+    <id>JoarOyen.ReSharperExtensions.Macros</id>
+    <version>8.0.0.1</version>
+    <title>Joar Øyen's Live Template Macros for ReSharper</title>
     <authors>Joar Øyen</authors>
     <projectUrl>https://github.com/joaroyen/ReSharperExtensions</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>A ReSharper DotSettings file with a Live Template example using macros for writing MSTest methods.</description>
+    <description>Live Templates Macros for writing test methods</description>
     <summary />
     <releaseNotes>Support for ReSharper 8.0</releaseNotes>
     <copyright>Copyright © 2013 Joar Øyen</copyright>
@@ -15,10 +15,9 @@
     <tags>Macro, Testing</tags>
     <dependencies>
       <dependency id="ReSharper" version="8.0" />
-      <dependency id="JoarOyen.ReSharperExtensions.Macros" version="8.0" />
     </dependencies>
   </metadata>
   <files>
-    <file src="..\JoarOyen.ReSharperExtensions.LiveTemplates.DotSettings" target="ReSharper\v8.0\settings\" />
+    <file src="..\JoarOyen.ReSharperPlugIn\bin\Release\JoarOyen.ReSharperPlugIn.*" target="ReSharper\v8.0\plugins\" />
   </files>
 </package>
