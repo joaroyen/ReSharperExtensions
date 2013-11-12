@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\JetBrains.ReSharper.SDK.8.1.231-EAP\build\JetBrains.ReSharper.SDK.Props" Condition="Exists('..\..\packages\JetBrains.ReSharper.SDK.8.1.231-EAP\build\JetBrains.ReSharper.SDK.Props')" />
+  <Import Project="..\packages\JetBrains.ReSharper.SDK.8.1.296-EAP\build\JetBrains.ReSharper.SDK.Props" Condition="Exists('..\packages\JetBrains.ReSharper.SDK.8.1.296-EAP\build\JetBrains.ReSharper.SDK.Props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JoarOyen.ReSharperPlugin._8._1</RootNamespace>
+    <AssemblyName>JoarOyen.ReSharperPlugin.8.1</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\JoarOyen.ReSharperPlugIn\bin\Debug\</OutputPath>
+    <DefineConstants>JET_MODE_ASSERT;DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\JoarOyen.ReSharperPlugIn\bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <StartAction>Program</StartAction>
+    <StartProgram>$(VsInstallDir)devenv.exe</StartProgram>
+    <StartArguments>/ReSharper.Plugin $(AssemblyName).dll /ReSharper.Internal</StartArguments>
+    <StartWorkingDirectory>$(MSBuildProjectDirectory)\$(OutputPath)</StartWorkingDirectory>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\..\JoarOyen.ReSharperPlugIn\CapitalizedWordsIdentifierMacro.cs">
+      <Link>CapitalizedWordsIdentifierMacro.cs</Link>
+    </Compile>
+    <Compile Include="..\..\JoarOyen.ReSharperPlugIn\CapitalizedWordsIdentifierMacroImpl.cs">
+      <Link>CapitalizedWordsIdentifierMacroImpl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\JoarOyen.ReSharperPlugIn\DomainAndUsernameMacro.cs">
+      <Link>DomainAndUsernameMacro.cs</Link>
+    </Compile>
+    <Compile Include="..\..\JoarOyen.ReSharperPlugIn\DomainAndUsernameMacroImpl.cs">
+      <Link>DomainAndUsernameMacroImpl.cs</Link>
+    </Compile>
+    <Compile Include="..\..\JoarOyen.ReSharperPlugIn\IdentifierBuilder.cs">
+      <Link>IdentifierBuilder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\JoarOyen.ReSharperPlugIn\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\..\JoarOyen.ReSharperPlugIn\QuickParameterlessMacro.cs">
+      <Link>QuickParameterlessMacro.cs</Link>
+    </Compile>
+    <Compile Include="..\..\JoarOyen.ReSharperPlugIn\SimpleMacroDefinition.cs">
+      <Link>SimpleMacroDefinition.cs</Link>
+    </Compile>
+    <Compile Include="..\..\JoarOyen.ReSharperPlugIn\ValidIdentifierMacro.cs">
+      <Link>ValidIdentifierMacro.cs</Link>
+    </Compile>
+    <Compile Include="..\..\JoarOyen.ReSharperPlugIn\ValidIdentifierMacroImpl.cs">
+      <Link>ValidIdentifierMacroImpl.cs</Link>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\JetBrains.ReSharper.SDK.8.1.296-EAP\build\JetBrains.ReSharper.SDK.Targets" Condition="Exists('..\packages\JetBrains.ReSharper.SDK.8.1.296-EAP\build\JetBrains.ReSharper.SDK.Targets')" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <Import Project="..\..\packages\JetBrains.ReSharper.SDK.8.1.231-EAP\build\JetBrains.ReSharper.SDK.Targets" Condition="Exists('..\..\packages\JetBrains.ReSharper.SDK.8.1.231-EAP\build\JetBrains.ReSharper.SDK.Targets')" />
+</Project>

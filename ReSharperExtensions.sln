@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{00465A82-90E8-4B47-8022-F159490A9C40}"
 	ProjectSection(SolutionItems) = preProject
 		BuildPackages.ps1 = BuildPackages.ps1
@@ -10,9 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoarOyen.ReSharperPlugIn", "JoarOyen.ReSharperPlugIn\JoarOyen.ReSharperPlugIn.csproj", "{50B2B447-87A5-4222-97FC-4459310DA9DF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoarOyen.ReSharperPlugIn.8.0", "JoarOyen.ReSharperPlugIn\JoarOyen.ReSharperPlugIn.8.0.csproj", "{50B2B447-87A5-4222-97FC-4459310DA9DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoarOyen.ReSharperPlugIn.Tests", "JoarOyen.ReSharperPlugIn.Tests\JoarOyen.ReSharperPlugIn.Tests.csproj", "{B1C3175A-4D88-46F0-83A7-25AA37B057FD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoarOyen.ReSharperPlugIn.8.0.Tests", "JoarOyen.ReSharperPlugIn.Tests\JoarOyen.ReSharperPlugIn.8.0.Tests.csproj", "{B1C3175A-4D88-46F0-83A7-25AA37B057FD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EBC0E906-0655-41F9-B029-9AAE922081B5}"
 	ProjectSection(SolutionItems) = preProject
@@ -23,9 +25,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{EBC0E9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{C8DD8158-6BB4-4471-A720-AE800D08A6E6}"
 	ProjectSection(SolutionItems) = preProject
-		Deploy\JoarOyen.ReSharperExtensions.LiveTemplates.8.0.0.1.nuspec = Deploy\JoarOyen.ReSharperExtensions.LiveTemplates.8.0.0.1.nuspec
-		Deploy\JoarOyen.ReSharperExtensions.Macros.8.0.0.1.nuspec = Deploy\JoarOyen.ReSharperExtensions.Macros.8.0.0.1.nuspec
+		Deploy\JoarOyen.ReSharperExtensions.LiveTemplates.nuspec = Deploy\JoarOyen.ReSharperExtensions.LiveTemplates.nuspec
+		Deploy\JoarOyen.ReSharperExtensions.Macros.nuspec = Deploy\JoarOyen.ReSharperExtensions.Macros.nuspec
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReSharper-8.0", "ReSharper-8.0", "{41554525-94DE-48CB-A1D0-9E0B706E179E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReSharper-8.1", "ReSharper-8.1", "{28FF66CA-CB7A-43DA-823A-9ED242899D3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoarOyen.ReSharperPlugin.8.1", "ReSharper81\JoarOyen.ReSharperPlugIn\JoarOyen.ReSharperPlugin.8.1.csproj", "{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoarOyen.ReSharperPlugin.8.1.Tests", "ReSharper81\JoarOyen.ReSharperPlugIn.Tests\JoarOyen.ReSharperPlugin.8.1.Tests.csproj", "{6330F5DB-527D-40ED-8802-89064043A76F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,8 +67,34 @@ Global
 		{B1C3175A-4D88-46F0-83A7-25AA37B057FD}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{B1C3175A-4D88-46F0-83A7-25AA37B057FD}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{B1C3175A-4D88-46F0-83A7-25AA37B057FD}.Release|x86.ActiveCfg = Release|Any CPU
+		{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}.Release|x86.ActiveCfg = Release|Any CPU
+		{6330F5DB-527D-40ED-8802-89064043A76F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6330F5DB-527D-40ED-8802-89064043A76F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6330F5DB-527D-40ED-8802-89064043A76F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{6330F5DB-527D-40ED-8802-89064043A76F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{6330F5DB-527D-40ED-8802-89064043A76F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{6330F5DB-527D-40ED-8802-89064043A76F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6330F5DB-527D-40ED-8802-89064043A76F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6330F5DB-527D-40ED-8802-89064043A76F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{6330F5DB-527D-40ED-8802-89064043A76F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{6330F5DB-527D-40ED-8802-89064043A76F}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B1C3175A-4D88-46F0-83A7-25AA37B057FD} = {41554525-94DE-48CB-A1D0-9E0B706E179E}
+		{50B2B447-87A5-4222-97FC-4459310DA9DF} = {41554525-94DE-48CB-A1D0-9E0B706E179E}
+		{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764} = {28FF66CA-CB7A-43DA-823A-9ED242899D3D}
+		{6330F5DB-527D-40ED-8802-89064043A76F} = {28FF66CA-CB7A-43DA-823A-9ED242899D3D}
 	EndGlobalSection
 EndGlobal
