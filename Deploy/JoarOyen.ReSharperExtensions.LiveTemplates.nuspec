@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
   <metadata>
     <id>JoarOyen.ReSharperExtensions.LiveTemplates</id>
-    <version>8.0.0.2-EAP-20131112</version>
+    <version>8.1.0.0-EAP-20131112</version>
     <title>Joar Øyen's Live Templates for ReSharper</title>
     <authors>Joar Øyen</authors>
     <projectUrl>https://github.com/joaroyen/ReSharperExtensions</projectUrl>
