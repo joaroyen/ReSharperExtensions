@@ -1,23 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
-  <metadata>
-    <id>JoarOyen.ReSharperExtensions.LiveTemplates</id>
-    <version>8.1.0.0-EAP-20131112</version>
-    <title>Joar Øyen's Live Templates for ReSharper</title>
-    <authors>Joar Øyen</authors>
-    <projectUrl>https://github.com/joaroyen/ReSharperExtensions</projectUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>A ReSharper DotSettings file with a Live Template example using macros for writing MSTest methods.</description>
-    <releaseNotes>Support for ReSharper 8.1</releaseNotes>
-    <copyright>Copyright © 2013 Joar Øyen</copyright>
-    <language>en-US</language>
-    <tags>Macro, Testing</tags>
-    <dependencies>
-      <dependency id="ReSharper" version="8.0" />
-      <dependency id="JoarOyen.ReSharperExtensions.Macros" version="8.0" />
-    </dependencies>
-  </metadata>
-  <files>
-    <file src="..\JoarOyen.ReSharperExtensions.LiveTemplates.DotSettings" target="ReSharper\vAny\settings\" />
-  </files>
+	<metadata>
+		<id>JoarOyen.ReSharperExtensions.LiveTemplates</id>
+		<version>8.1.0.0</version>
+		<title>Joar Øyen's Live Templates for ReSharper</title>
+		<authors>Joar Øyen</authors>
+		<owners>Joar Øyen</owners>
+		<licenseUrl>https://github.com/joaroyen/ReSharperExtensions/blob/master/LICENSE.txt</licenseUrl>
+		<projectUrl>https://github.com/joaroyen/ReSharperExtensions</projectUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>A ReSharper DotSettings file with a Live Template example using macros for writing MSTest methods.</description>
+		<releaseNotes>Support for ReSharper 8.1</releaseNotes>
+		<copyright>Copyright © 2013 Joar Øyen</copyright>
+		<language>en-US</language>
+		<tags>Macro, Testing</tags>
+		<dependencies>
+			<dependency id="ReSharper" version="[8.0, 8.2)" />
+			<dependency id="JoarOyen.ReSharperExtensions.Macros" version="8.1" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="..\JoarOyen.ReSharperExtensions.LiveTemplates.DotSettings" target="ReSharper\vAny\settings\" />
+	</files>
 </package>

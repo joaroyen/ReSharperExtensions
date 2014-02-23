@@ -11,8 +11,8 @@ using JetBrains.Application.PluginSupport;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-[assembly: AssemblyVersion("8.0.0.0")]
-[assembly: AssemblyFileVersion("8.0.0.0")]
+[assembly: AssemblyVersion("8.1.0.0")]
+[assembly: AssemblyFileVersion("8.1.0.0")]
 
 [assembly: ActionsXml("JoarOyen.ReSharperPlugIn.Actions.xml")]
 
