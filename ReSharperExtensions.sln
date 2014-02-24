@@ -29,13 +29,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{C8DD81
 		Deploy\JoarOyen.ReSharperExtensions.Macros.nuspec = Deploy\JoarOyen.ReSharperExtensions.Macros.nuspec
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReSharper-8.0", "ReSharper-8.0", "{41554525-94DE-48CB-A1D0-9E0B706E179E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReSharper80", "ReSharper80", "{41554525-94DE-48CB-A1D0-9E0B706E179E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReSharper-8.1", "ReSharper-8.1", "{28FF66CA-CB7A-43DA-823A-9ED242899D3D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReSharper81", "ReSharper81", "{28FF66CA-CB7A-43DA-823A-9ED242899D3D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoarOyen.ReSharperPlugin.8.1", "ReSharper81\JoarOyen.ReSharperPlugIn\JoarOyen.ReSharperPlugin.8.1.csproj", "{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoarOyen.ReSharperPlugin.8.1.Tests", "ReSharper81\JoarOyen.ReSharperPlugIn.Tests\JoarOyen.ReSharperPlugin.8.1.Tests.csproj", "{6330F5DB-527D-40ED-8802-89064043A76F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReSharper82", "ReSharper82", "{4592E882-8292-4457-8E1D-663F07293798}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoarOyen.ReSharperPlugin.8.2", "ReSharper82\JoarOyen.ReSharperPlugIn\JoarOyen.ReSharperPlugin.8.2.csproj", "{361DC01C-8D3A-4125-A76C-6800F1CC265F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JoarOyen.ReSharperPlugin.8.2.Tests", "ReSharper82\JoarOyen.ReSharperPlugIn.Tests\JoarOyen.ReSharperPlugin.8.2.Tests.csproj", "{89809C89-6371-4C7E-974B-589B8ED9BD33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +93,26 @@ Global
 		{6330F5DB-527D-40ED-8802-89064043A76F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{6330F5DB-527D-40ED-8802-89064043A76F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{6330F5DB-527D-40ED-8802-89064043A76F}.Release|x86.ActiveCfg = Release|Any CPU
+		{361DC01C-8D3A-4125-A76C-6800F1CC265F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{361DC01C-8D3A-4125-A76C-6800F1CC265F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{361DC01C-8D3A-4125-A76C-6800F1CC265F}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{361DC01C-8D3A-4125-A76C-6800F1CC265F}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{361DC01C-8D3A-4125-A76C-6800F1CC265F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{361DC01C-8D3A-4125-A76C-6800F1CC265F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{361DC01C-8D3A-4125-A76C-6800F1CC265F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{361DC01C-8D3A-4125-A76C-6800F1CC265F}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{361DC01C-8D3A-4125-A76C-6800F1CC265F}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{361DC01C-8D3A-4125-A76C-6800F1CC265F}.Release|x86.ActiveCfg = Release|Any CPU
+		{89809C89-6371-4C7E-974B-589B8ED9BD33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89809C89-6371-4C7E-974B-589B8ED9BD33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89809C89-6371-4C7E-974B-589B8ED9BD33}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{89809C89-6371-4C7E-974B-589B8ED9BD33}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{89809C89-6371-4C7E-974B-589B8ED9BD33}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{89809C89-6371-4C7E-974B-589B8ED9BD33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89809C89-6371-4C7E-974B-589B8ED9BD33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89809C89-6371-4C7E-974B-589B8ED9BD33}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{89809C89-6371-4C7E-974B-589B8ED9BD33}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{89809C89-6371-4C7E-974B-589B8ED9BD33}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,5 +122,7 @@ Global
 		{50B2B447-87A5-4222-97FC-4459310DA9DF} = {41554525-94DE-48CB-A1D0-9E0B706E179E}
 		{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764} = {28FF66CA-CB7A-43DA-823A-9ED242899D3D}
 		{6330F5DB-527D-40ED-8802-89064043A76F} = {28FF66CA-CB7A-43DA-823A-9ED242899D3D}
+		{361DC01C-8D3A-4125-A76C-6800F1CC265F} = {4592E882-8292-4457-8E1D-663F07293798}
+		{89809C89-6371-4C7E-974B-589B8ED9BD33} = {4592E882-8292-4457-8E1D-663F07293798}
 	EndGlobalSection
 EndGlobal

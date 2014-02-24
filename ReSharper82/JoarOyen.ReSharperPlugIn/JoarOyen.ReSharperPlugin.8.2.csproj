@@ -6,11 +6,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{CC0E4EF7-05AA-4D5B-AEE5-20FE4E0C7764}</ProjectGuid>
+    <ProjectGuid>{361DC01C-8D3A-4125-A76C-6800F1CC265F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JoarOyen.ReSharperPlugin._8._1</RootNamespace>
-    <AssemblyName>JoarOyen.ReSharperPlugin.8.1</AssemblyName>
+    <RootNamespace>JoarOyen.ReSharperPlugin._8._2</RootNamespace>
+    <AssemblyName>JoarOyen.ReSharperPlugin.8.2</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
