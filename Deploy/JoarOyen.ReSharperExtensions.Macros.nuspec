@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
 	<metadata>
 		<id>JoarOyen.ReSharperExtensions.Macros</id>
-		<version>8.2.0.0-EAP-20140223</version>
+		<version>8.2.0.0</version>
 		<title>Joar Øyen's Live Template Macros for ReSharper</title>
 		<authors>Joar Øyen</authors>
 		<owners>Joar Øyen</owners>
