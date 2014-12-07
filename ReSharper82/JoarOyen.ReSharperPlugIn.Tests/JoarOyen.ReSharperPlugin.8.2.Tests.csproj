@@ -74,7 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\JoarOyen.ReSharperPlugIn\JoarOyen.ReSharperPlugin.8.2.csproj">
-      <Project>{cc0e4ef7-05aa-4d5b-aee5-20fe4e0c7764}</Project>
+      <Project>{361dc01c-8d3a-4125-a76c-6800f1cc265f}</Project>
       <Name>JoarOyen.ReSharperPlugin.8.2</Name>
     </ProjectReference>
   </ItemGroup>
