@@ -1,5 +1,14 @@
 ReSharperExtensions
 ===================
+
+Important
+---------
+
+Due to changes in distribution of extensions for the ReSharper platform, I have created a new repository with an extension supporting ReSharper 9.0 and later: [ReSharper.LiveTemplates](https://github.com/joaroyen/ReSharper.LiveTemplates)
+
+What this project contains
+--------------------------
+
 This solution contains Live Templates and macros for [JetBrains ReSharper](http://www.jetbrains.com/resharper/). The following macros are available:
 
 * **ValidIdentifierMacro**: Replaces invalid identifier characters with underscores as you type
